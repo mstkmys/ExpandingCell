@@ -12,6 +12,7 @@
 		685FFD87209A59B0005A5162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685FFD85209A59B0005A5162 /* Main.storyboard */; };
 		685FFD89209A59B1005A5162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685FFD88209A59B1005A5162 /* Assets.xcassets */; };
 		685FFD8C209A59B1005A5162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685FFD8A209A59B1005A5162 /* LaunchScreen.storyboard */; };
+		685FFD99209A5AFC005A5162 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685FFD98209A5AFC005A5162 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		685FFD88209A59B1005A5162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		685FFD8B209A59B1005A5162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		685FFD8D209A59B1005A5162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		685FFD98209A5AFC005A5162 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,63 @@
 		685FFD80209A59B0005A5162 /* ExpandingCell */ = {
 			isa = PBXGroup;
 			children = (
-				685FFD81209A59B0005A5162 /* AppDelegate.swift */,
-				685FFD83209A59B0005A5162 /* ViewController.swift */,
-				685FFD85209A59B0005A5162 /* Main.storyboard */,
-				685FFD88209A59B1005A5162 /* Assets.xcassets */,
-				685FFD8A209A59B1005A5162 /* LaunchScreen.storyboard */,
+				685FFD94209A5A45005A5162 /* Resources */,
+				685FFD93209A5A3A005A5162 /* Classes */,
 				685FFD8D209A59B1005A5162 /* Info.plist */,
 			);
 			path = ExpandingCell;
+			sourceTree = "<group>";
+		};
+		685FFD93209A5A3A005A5162 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				685FFD81209A59B0005A5162 /* AppDelegate.swift */,
+				685FFD96209A5A64005A5162 /* Views */,
+				685FFD95209A5A5D005A5162 /* Controllers */,
+				685FFD9A209A5B9E005A5162 /* Utilities */,
+				685FFD97209A5A6D005A5162 /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		685FFD94209A5A45005A5162 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				685FFD88209A59B1005A5162 /* Assets.xcassets */,
+				685FFD8A209A59B1005A5162 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		685FFD95209A5A5D005A5162 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				685FFD83209A59B0005A5162 /* ViewController.swift */,
+				685FFD98209A5AFC005A5162 /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		685FFD96209A5A64005A5162 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				685FFD85209A59B0005A5162 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		685FFD97209A5A6D005A5162 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		685FFD9A209A5B9E005A5162 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				685FFD84209A59B0005A5162 /* ViewController.swift in Sources */,
+				685FFD99209A5AFC005A5162 /* TableViewController.swift in Sources */,
 				685FFD82209A59B0005A5162 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -283,6 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDFA67X5D5;
 				INFOPLIST_FILE = ExpandingCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mstk.ExpandingCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDFA67X5D5;
 				INFOPLIST_FILE = ExpandingCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mstk.ExpandingCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
